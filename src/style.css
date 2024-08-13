@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background-image: url(./images/background-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding: 0%;
+}
+
+header{
+    background-color: rgba(202, 171, 124, 0.781);
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    
+}
