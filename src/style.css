@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+
 body {
     height: 100vh;
     background-image: url(./images/background-img.jpg);
@@ -40,6 +43,7 @@ button{
 
 button:hover{
     background-color: rgb(103, 141, 138);
+    cursor: pointer;
 }
 
 #content{
@@ -48,7 +52,7 @@ button:hover{
     padding-left: 200px;
     padding-top: 100px;
     padding-bottom: 100px;
-    
+    overflow: auto;
 }
 
 .template{
@@ -57,7 +61,6 @@ button:hover{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: 50px;
 }
@@ -92,15 +95,56 @@ button:hover{
 .donuts-container{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    
 }
 
 .donut-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    
 
 }
 
 .donut-picture{
-    height: 60px;
-    width: 60px;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.donut-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.donut-name{
+    font-size: 24px;
+    font-family: 'Matemasie';
+}
+
+.donut-price{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-info-containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    gap: 20px;
 }

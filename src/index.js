@@ -4,6 +4,7 @@ import { menu } from "./menu";
 import { contact } from "./contact";
 
 const template = document.querySelector(".template");
+home(template);
 
 document.addEventListener("click", (e)=>{
     if (e.target.id == "home"){

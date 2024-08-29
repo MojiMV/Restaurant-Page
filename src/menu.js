@@ -1,16 +1,49 @@
+import chocolatedonut from './images/baked-chocolate-donuts.jpg';
+import vanilladonut from './images/vanilla-donut.jpg';
+import strawberrydonut from './images/strawberry-donut.jpg'
+
 function menu(template){
-    template.innerHTML = ` <h1 class="about">About</h1>
-            <p class="about-para">Beary's has the best porridge! The atmosphere and customer service make you feel like you are sitting in the middle of the woods, eating like a bear! This is exactly the kind of place that I like to return to again and again.</p>
-            <h1 class="hours">Hours</h1>
-            <p class="hours-para">Sunday: 8am - 8pm
-                <br>Monday: 6am - 6pm
-                <br>Tuesday: 6am - 6pm
-                <br>Wednesday: 6am - 6pm
-                <br>Thursday: 6am - 10pm
-                <br>Friday: 6am - 10pm
-                <br>Saturday: 8am - 10pm</p>
-            <h1 class="location">Location</h1>
-            <p class="location-para">123 Forest Drive, Forestville, Maine</p>`
+    template.innerHTML = ` <div class="donuts-container">
+                <div class="donut-container">
+                    <div class="donut-picture-container">
+                        <img src="${chocolatedonut}" alt="chocolate donuts" class="donut-picture">
+                    </div>
+                    <div class="donut-info">
+                        <div class="donut-name">
+                            Chocolate Donut
+                        </div>
+                        <div class="donut-price">
+                            5$
+                        </div>
+                    </div>
+                </div>
+                <div class="donut-container">
+                    <div class="donut-picture-container">
+                        <img src="${vanilladonut}" alt="vanilla donut" class="donut-picture">
+                    </div>
+                    <div class="donut-info">
+                        <div class="donut-name">
+                            Vanilla Donut
+                        </div>
+                        <div class="donut-price">
+                            4$
+                        </div>
+                    </div>
+                </div>
+                <div class="donut-container">
+                    <div class="donut-picture-container">
+                        <img src="${strawberrydonut}" alt="strawberry donut" class="donut-picture">
+                    </div>
+                    <div class="donut-info">
+                        <div class="donut-name">
+                            Strawberry Donut
+                        </div>
+                        <div class="donut-price">
+                            6$
+                        </div>
+                    </div>
+                </div>
+            </div>`
 }
 
 export {menu};
